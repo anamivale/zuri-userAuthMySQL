@@ -4,7 +4,7 @@ if(isset($_SESSION['fullnames'])){
     $_SESSION=array();
     unset($_SESSION);
     session_destroy();
-    header(location:'login.php');
+    header('location : ./forms/login.php');
 }
 }
 logout();
